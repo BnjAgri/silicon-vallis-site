@@ -28,7 +28,7 @@
 		<header class="sticky-top">
 			<div class="navbar navbar-expand-sm navbar-light navbar-lewagon" aria-label="Navigation principale">
 				<div class="container">
-					<a class="navbar-brand" href="../" aria-label="Silicon Vallis (accueil)">
+					<a class="navbar-brand" href="../index.html" aria-label="Silicon Vallis (accueil)">
 						<img src="../images/logo_v2.jpg" alt="Silicon Vallis" width="140" height="34" decoding="async" />
 					</a>
 
@@ -45,12 +45,12 @@
 
 					<div class="collapse navbar-collapse" id="navbarSupportedContent">
 						<ul class="navbar-nav ms-auto">
-							<li class="nav-item"><a class="nav-link" href="../">Accueil</a></li>
-							<li class="nav-item"><a class="nav-link" href="../loc-vallis/">Loc Vallis</a></li>
-							<li class="nav-item"><a class="nav-link" href="../realisations/">Réalisations</a></li>
-							<li class="nav-item"><a class="nav-link active" aria-current="page" href="./">Qui sommes-nous ?</a></li>
-							<li class="nav-item"><a class="nav-link" href="../contact/">Contact</a></li>
-							<li class="nav-item ms-sm-2"><a class="btn btn-flat" href="../contact/">Demander un devis</a></li>
+							<li class="nav-item"><a class="nav-link" href="../index.html">Accueil</a></li>
+							<li class="nav-item"><a class="nav-link" href="../loc-vallis/index.html">Loc Vallis</a></li>
+							<li class="nav-item"><a class="nav-link" href="../realisations/index.html">Réalisations</a></li>
+							<li class="nav-item"><a class="nav-link active" aria-current="page" href="./index.html">Qui sommes-nous ?</a></li>
+							<li class="nav-item"><a class="nav-link" href="../contact/index.html">Contact</a></li>
+							<li class="nav-item ms-sm-2"><a class="btn btn-flat" href="../contact/index.html">Demander un devis</a></li>
 						</ul>
 					</div>
 				</div>
@@ -59,69 +59,121 @@
 
 		<main id="contenu">
 			<!-- BANNER -->
-			<section class="banner" style="background-image: linear-gradient(rgba(var(--sv-ink-rgb),0.55), rgba(var(--sv-ink-rgb),0.55)), url('../images/ventoux-banner.png');">
+			<section
+				class="banner"
+				style="background-image: linear-gradient(rgba(var(--sv-ink-rgb),0.55), rgba(var(--sv-ink-rgb),0.55)), url('../images/ventoux-banner.png');">
 				<div class="container">
+					<img class="banner-logo" src="../images/logo_v2.jpg" alt="Silicon Vallis" width="220" height="56" decoding="async" />
+					<p class="text-uppercase small fw-semibold mb-2">Web • Logiciels • Applis mobiles</p>
 					<h1>Qui sommes-nous ?</h1>
-					<p>Une approche terrain, locale et pragmatique — pour des outils web utiles.</p>
-					<a class="btn btn-ghost btn-lg" href="../contact/">Travailler ensemble</a>
+					<h2>Terrain, éditorial, pragmatique</h2>
+					<p>Une approche locale et simple — pour des outils web utiles.</p>
+					<div class="d-flex gap-2 flex-wrap">
+						<a class="btn btn-flat btn-lg" href="../contact/index.html">Parler de votre projet</a>
+						<a class="btn btn-ghost btn-lg" href="../realisations/index.html">Voir des exemples</a>
+					</div>
 				</div>
 			</section>
 
-			<!-- PROFIL -->
-			<section class="py-5">
+			<!-- PRÉSENTATION (layout home) -->
+			<section class="py-5 bg-light border-top border-bottom">
 				<div class="container">
 					<div class="row g-4">
-						<div class="col-lg-7">
-							<div class="card shadow-sm">
-								<div class="card-body">
-									<h2 class="h4">Un profil “petites entreprises”</h2>
-									<p class="text-secondary">
-										Silicon Vallis s’adresse aux TPE, gîtes, chambres d’hôtes, indépendants, agriculteurs.
-										L’idée : rendre le web plus accessible, plus simple, plus autonome.
-									</p>
+						<div class="col-lg-6">
+							<h2 class="h3">Les pieds sur terre</h2>
+							<p class="text-secondary">
+								Silicon Vallis s’adresse aux TPE, gîtes, chambres d’hôtes, indépendants, agriculteurs.<br />
+								L’idée : démocratiser les outils web auprès des TPE de Provence. Vous avez une idée, vous pensez que ce n'est pas pour vous ? Nous si...
+							</p>
 
-									<div class="row g-3">
-										<div class="col-md-6">
-											<div class="card h-100">
-												<div class="card-body">
-													<p class="mb-1 text-secondary small text-uppercase fw-semibold">15 ans</p>
-													<h3 class="h6">Journaliste</h3>
-													<p class="text-secondary mb-0">Savoir expliquer, structurer, rendre clair et concret.</p>
-												</div>
-											</div>
-										</div>
-										<div class="col-md-6">
-											<div class="card h-100">
-												<div class="card-body">
-													<p class="mb-1 text-secondary small text-uppercase fw-semibold">15 ans</p>
-													<h3 class="h6">Patron de TPE agricole</h3>
-													<p class="text-secondary mb-0">Production de spiruline : ventes, gestion, contraintes du terrain.</p>
-												</div>
-											</div>
-										</div>
+							<div class="d-grid gap-3">
+								<div class="card-product">
+									<img src="../images/profil-bm.jpg" alt="Portrait" loading="lazy" decoding="async" />
+									<div class="card-product-infos">
+										<h2>15 ans journaliste</h2>
+										<p>Savoir expliquer, structurer, rendre clair et concret.</p>
 									</div>
+								</div>
 
-									<div class="mt-3">
-										<p class="text-secondary mb-0">
-											<strong>Aujourd’hui : développeur web.</strong> Une V1 claire, puis des évolutions utiles.
+								<div class="card-product">
+									<img src="../images/banner_v2.jpg" alt="Terrain" loading="lazy" decoding="async" />
+									<div class="card-product-infos">
+										<h2>15 ans patron de TPE agricole</h2>
+										<p>Production de spiruline : ventes, gestion, contraintes du terrain.</p>
+									</div>
+								</div>
+
+								<div class="card-product">
+									<img class="img-contain" src="../images/smartphone.png" alt="Aperçu mobile" loading="lazy" decoding="async" />
+									<div class="card-product-infos">
+										<h2>Aujourd'hui, web developper.</h2>
+										<p>Le code, l'éditorial, et un excellent réseau professionnel.</p>
+									</div>
+								</div>
+
+								<div class="card shadow-sm bg-white">
+									<div class="card-body p-4 p-md-5">
+										<h2 class="h3">Une aventure humaine</h2>
+										<p class="text-secondary">
+											Silicon Vallis est née d’un parcours un peu atypique, celui de Benjamin Masson. Avant de devenir développeur web, il a travaillé comme journaliste spécialisé en agriculture dans la presse nationale, puis comme producteur de spiruline en Provence. Deux expériences très différentes, mais qui lui ont appris à analyser des problèmes concrets, saisir les besoins et chercher des solutions pragmatiques.
 										</p>
+
+										<p class="text-secondary mb-4">
+											Le développement web est venu ensuite comme un prolongement naturel : un moyen de concevoir des outils numériques simples, efficaces et réellement utiles. Aujourd’hui, il développe des applications web sur mesure, principalement avec Ruby on Rails, en privilégiant des solutions robustes et évolutives.
+										</p>
+
+										<blockquote class="sv-exergue" aria-label="Exergue">
+											<p>
+												“Un réseau de développeurs, journalistes et maquettistes de très haut niveau rencontrés au fil de mon parcours.”
+											</p>
+										</blockquote>
+
+										<p class="text-secondary">
+											Son parcours hors du monde purement technique me permet d’aborder les projets avec une vision plus large. Il connait les réalités d’un entrepreneur : contraintes de temps, de budget et d’efficacité. L'objectif n’est pas seulement de produire du code, mais de construire des outils qui répondent vraiment à un besoin.
+										</p>
+
+										<p class="text-secondary mb-0">
+											La manière de travailler est simple : comprendre d’abord, construire ensuite. Chaque projet commence par un échange pour clarifier les objectifs et éviter la complexité inutile.
+										</p>
+										<div class="clearfix"></div>
 									</div>
 								</div>
 							</div>
 						</div>
 
-						<div class="col-lg-5">
-							<div class="card h-100">
+						<div class="col-lg-6 d-flex flex-column">
+							<div class="card shadow-sm sv-advantage-card mt-auto">
 								<div class="card-body">
-									<h2 class="h5">Pourquoi c’est un avantage pour vous</h2>
-									<ul class="mb-0">
+									<div class="d-flex align-items-center justify-content-between gap-3">
+										<h2 class="h3 mb-0">Pourquoi c’est un avantage</h2>
+										<span class="badge text-bg-primary">Local</span>
+									</div>
+									<ul class="mt-3 mb-0">
 										<li>Un langage concret, sans jargon</li>
 										<li>Priorisation : utile d’abord</li>
 										<li>Contenu (éditorial) + technique</li>
 										<li>Objectif conversion : contacts et devis</li>
 									</ul>
 									<hr />
-									<p class="text-secondary mb-0">Basé dans le Vaucluse : échanges simples, décisions rapides.</p>
+									<h3 class="h5 mb-3">Entrepreneurs en Vaucluse… Comme vous !</h3>
+									<p class="text-secondary">
+										Basé à Pernes-les-Fontaines, nous développons des applications web pour des projets et des entreprises du territoire. Travailler avec un développeur local, c’est pouvoir se rencontrer facilement, échanger autour du projet et ajuster les solutions au fil du temps.
+									</p>
+
+									<img
+										class="img-fluid rounded-3 my-3"
+										src="../images/perneslesfontaines.png"
+										alt="Pernes-les-Fontaines, Vaucluse"
+										loading="lazy"
+										decoding="async" />
+
+									<p class="text-secondary">
+										C’est aussi partager une même culture du travail : celle des entrepreneurs et artisans qui connaissent la valeur du temps, de l’effort et du travail bien fait.
+									</p>
+
+									<p class="text-secondary mb-0">
+										Proximité, dialogue direct et compréhension des réalités du terrain permettent de construire des outils numériques utiles, solides et durables.
+									</p>
 								</div>
 							</div>
 						</div>
@@ -129,15 +181,46 @@
 				</div>
 			</section>
 
-			<!-- CTA FINAL -->
+			<!-- BÉNÉFICES (layout home) -->
+			<section class="py-5">
+				<div class="container">
+					<h2 class="h3">Ce que ça change pour vous</h2>
+
+					<div class="row g-3 mt-3" aria-label="Bénéfices">
+						<div class="col-12 col-sm-6 col-lg-3"><div class="card-category">Clarté</div></div>
+						<div class="col-12 col-sm-6 col-lg-3"><div class="card-category">Priorisation</div></div>
+						<div class="col-12 col-sm-6 col-lg-3"><div class="card-category">Éditorial</div></div>
+						<div class="col-12 col-sm-6 col-lg-3"><div class="card-category">Conversion</div></div>
+					</div>
+
+					<div class="row g-3 mt-3">
+						<div class="col-md-6 col-lg-3">
+							<p class="text-secondary mb-0"><strong>Clarté :</strong> des pages simples qui rassurent et expliquent votre offre.</p>
+						</div>
+						<div class="col-md-6 col-lg-3">
+							<p class="text-secondary mb-0"><strong>Priorisation :</strong> l’utile d’abord, sans “usine à gaz”.</p>
+						</div>
+						<div class="col-md-6 col-lg-3">
+							<p class="text-secondary mb-0"><strong>Éditorial :</strong> le fond (contenu) et la forme (technique) avancent ensemble.</p>
+						</div>
+						<div class="col-md-6 col-lg-3">
+							<p class="text-secondary mb-0"><strong>Conversion :</strong> des CTAs clairs : prise de contact, demande de devis.</p>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<!-- CTA FINAL (layout home) -->
 			<section class="py-5 bg-light border-top">
 				<div class="container">
-					<div class="d-flex flex-column flex-lg-row align-items-start align-items-lg-center justify-content-between gap-3">
-						<div>
+					<div class="row align-items-center g-3">
+						<div class="col-lg-8">
 							<h2 class="h4 mb-1">Vous voulez un site qui vous ressemble (et qui sert vraiment) ?</h2>
 							<p class="text-secondary mb-0">Expliquez votre activité : je vous réponds avec une proposition simple.</p>
 						</div>
-						<a class="btn btn-gradient btn-lg" href="../contact/">Demander un devis</a>
+						<div class="col-lg-4 text-lg-end">
+							<a class="btn btn-gradient btn-lg" href="../contact/index.html">Demander un devis</a>
+						</div>
 					</div>
 				</div>
 			</section>
@@ -147,9 +230,9 @@
 		<footer class="footer">
 			<div class="container d-flex flex-column flex-md-row justify-content-between align-items-center gap-2">
 				<div class="footer-links">
-					<a href="../contact/">Contact</a>
-					<a href="../realisations/">Réalisations</a>
-					<a href="../">Accueil</a>
+					<a href="../contact/index.html">Contact</a>
+					<a href="../loc-vallis/index.html">Loc Vallis</a>
+					<a href="../realisations/index.html">Réalisations</a>
 				</div>
 				<div class="footer-copyright">© <span id="year"></span> Silicon Vallis — Vaucluse</div>
 			</div>

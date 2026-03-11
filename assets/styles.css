@@ -23,8 +23,11 @@
   --sv-sand-rgb: 246, 232, 207;
 
   --bs-primary: var(--sv-ink);
+  --bs-primary-rgb: var(--sv-ink-rgb);
   --bs-secondary: var(--sv-olive);
+  --bs-secondary-rgb: var(--sv-olive-rgb);
   --bs-info: var(--sv-terracotta);
+  --bs-info-rgb: var(--sv-terracotta-rgb);
 
   --bs-body-bg: var(--sv-sand);
   --bs-body-color: var(--sv-ink);
@@ -139,16 +142,59 @@ body {
    =============== */
 
 .btn-flat {
-  color: #fff;
-  background: var(--bs-primary);
-  border: 1px solid var(--bs-primary);
-  padding: 10px 18px;
-  border-radius: 8px;
+  --bs-btn-padding-y: 10px;
+  --bs-btn-padding-x: 18px;
+  --bs-btn-border-radius: 8px;
+
+  --bs-btn-color: #fff;
+  --bs-btn-bg: var(--bs-primary);
+  --bs-btn-border-color: var(--bs-primary);
+
+  --bs-btn-hover-color: #fff;
+  --bs-btn-hover-bg: rgba(var(--bs-primary-rgb), 0.92);
+  --bs-btn-hover-border-color: rgba(var(--bs-primary-rgb), 0.92);
+
+  --bs-btn-active-color: #fff;
+  --bs-btn-active-bg: rgba(var(--bs-primary-rgb), 0.88);
+  --bs-btn-active-border-color: rgba(var(--bs-primary-rgb), 0.88);
+
+  --bs-btn-disabled-color: #fff;
+  --bs-btn-disabled-bg: var(--bs-primary);
+  --bs-btn-disabled-border-color: var(--bs-primary);
+
+  transition:
+    transform 140ms ease,
+    filter 140ms ease,
+    box-shadow 140ms ease,
+    background-color 140ms ease,
+    border-color 140ms ease;
+  will-change: transform;
 }
 
-.btn-flat:hover {
-  color: #fff;
-  filter: brightness(0.95);
+.btn-flat:hover,
+.btn-flat:focus-visible {
+  transform: scale(1.025);
+  box-shadow: 0 10px 22px rgba(var(--sv-sand-rgb), 0.28);
+  filter: drop-shadow(0 8px 18px rgba(var(--sv-sand-rgb), 0.35));
+}
+
+.btn-flat:focus-visible {
+  outline: 2px solid rgba(var(--sv-sand-rgb), 0.65);
+  outline-offset: 2px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .btn-flat {
+    transition: none;
+  }
+
+  .btn-flat:hover {
+    transform: none;
+  }
+
+  .btn-flat:focus-visible {
+    transform: none;
+  }
 }
 
 .btn-ghost {
@@ -188,6 +234,88 @@ body {
 .btn-gradient:hover {
   color: #fff;
   filter: brightness(0.98);
+}
+
+/* ===============
+   Home: logo à gauche du texte
+   =============== */
+
+.sv-logo-lead__logo {
+  display: flex;
+  align-items: stretch;
+}
+
+.sv-logo-lead__img {
+  height: 100%;
+  width: auto;
+  max-width: 200px;
+  object-fit: contain;
+  border-radius: 10px;
+}
+
+@media (max-width: 576px) {
+  .sv-logo-lead__logo {
+    align-items: center;
+  }
+
+  .sv-logo-lead__img {
+    height: auto;
+    width: 120px;
+    max-width: 120px;
+  }
+}
+
+/* Visuel produit (Loc Vallis) */
+
+.loc-vallis-phone {
+  max-width: 220px;
+  height: auto;
+}
+
+@media (max-width: 576px) {
+  .loc-vallis-phone {
+    max-width: 180px;
+  }
+}
+
+/* Exergue (texte habillé) */
+
+.sv-exergue {
+  background: rgba(var(--sv-sand-rgb), 0.55);
+  border: 1px solid rgba(var(--sv-ink-rgb), 0.12);
+  border-radius: 12px;
+  padding: 14px 16px;
+  margin: 0 0 16px;
+}
+
+.sv-exergue p {
+  margin: 0;
+  font-style: italic;
+  font-weight: 600;
+  line-height: 1.35;
+  text-align: right;
+}
+
+@media (min-width: 768px) {
+  .sv-exergue {
+    float: right;
+    width: 45%;
+    max-width: 380px;
+    margin: 4px 0 14px 18px;
+  }
+}
+
+/* Qui sommes-nous : card alignée bas/droite */
+
+.sv-advantage-card {
+  width: 100%;
+}
+
+@media (min-width: 992px) {
+  .sv-advantage-card {
+    width: 50%;
+    margin-left: auto;
+  }
 }
 
 /* ===============
@@ -242,6 +370,11 @@ body {
   height: 100%;
   width: 140px;
   object-fit: cover;
+}
+
+.card-product img.img-contain {
+  object-fit: contain;
+  background: rgba(var(--sv-sand-rgb), 0.55);
 }
 
 .card-product-infos {
