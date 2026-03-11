@@ -3,197 +3,215 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="description" content="Silicon Vallis — création de sites web & outils sur-mesure. Découvrez Loc Vallis, l’app de réservation pour gîte et chambres." />
 
-    <title>Silicon Vallis — Web & produit • Loc Vallis</title>
+    <title>Silicon Vallis — sites web & outils simples (Vaucluse)</title>
+    <meta
+      name="description"
+      content="Agence web de proximité dans le Vaucluse : sites vitrines, outils simples, et Loc Vallis — moteur de réservation pour gîtes, sans commission." />
 
     <meta property="og:title" content="Silicon Vallis" />
-    <meta property="og:description" content="Création de sites web & outils sur-mesure. Promotion de Loc Vallis." />
+    <meta
+      property="og:description"
+      content="Sites web et outils utiles pour petites entreprises du Vaucluse. Découvrez Loc Vallis : réservations en direct, sans commission." />
     <meta property="og:type" content="website" />
 
+    <!-- Choix structurant (V1) : site statique multi-pages en Bootstrap, sans build ni framework. -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet" />
     <link rel="stylesheet" href="./assets/styles.css" />
     <script defer src="./assets/main.js"></script>
   </head>
   <body>
     <a class="skip-link" href="#contenu">Aller au contenu</a>
 
-    <header class="site-header">
-      <div class="container header-inner">
-        <a class="brand" href="#top" aria-label="Silicon Vallis (accueil)">
-          <span class="brand-mark" aria-hidden="true">SV</span>
-          <span class="brand-name">Silicon Vallis</span>
-        </a>
+    <!-- NAVBAR (UI kit Le Wagon) -->
+    <header class="sticky-top">
+      <div class="navbar navbar-expand-sm navbar-light navbar-lewagon" aria-label="Navigation principale">
+        <div class="container">
+          <a class="navbar-brand" href="./" aria-label="Silicon Vallis (accueil)">
+            <img src="./images/logo_v2.jpg" alt="Silicon Vallis" width="140" height="34" decoding="async" />
+          </a>
 
-        <nav class="nav" aria-label="Navigation principale">
-          <a href="#services">Services</a>
-          <a href="#loc-vallis">Loc Vallis</a>
-          <a href="#contact">Contact</a>
-        </nav>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Ouvrir le menu">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item"><a class="nav-link active" aria-current="page" href="./">Accueil</a></li>
+              <li class="nav-item"><a class="nav-link" href="./loc-vallis/">Loc Vallis</a></li>
+              <li class="nav-item"><a class="nav-link" href="./realisations/">Réalisations</a></li>
+              <li class="nav-item"><a class="nav-link" href="./qui-sommes-nous/">Qui sommes-nous ?</a></li>
+              <li class="nav-item"><a class="nav-link" href="./contact/">Contact</a></li>
+              <li class="nav-item ms-sm-2">
+                <a class="btn btn-flat" href="./contact/">Demander un devis</a>
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
     </header>
 
     <main id="contenu">
-      <section class="hero" id="top">
-        <div class="container hero-inner">
-          <div class="hero-copy">
-            <p class="kicker">Web • Produit • Automatisation</p>
-            <h1>On construit des expériences web claires, rapides et fiables.</h1>
-            <p class="lead">
-              Silicon Vallis conçoit des sites et des outils sur-mesure — du design à la mise en ligne.
-              Nous développons aussi <strong>Loc Vallis</strong>, une application de réservation pour l’hébergement.
-            </p>
-
-            <div class="cta-row">
-              <a class="button primary" href="#contact">Demander un devis</a>
-              <a class="button" href="#loc-vallis">Découvrir Loc Vallis</a>
-            </div>
-
-            <ul class="trust">
-              <li>Approche simple, orientée résultat</li>
-              <li>Performance & SEO</li>
-              <li>Maintenance & évolutions</li>
-            </ul>
-          </div>
-
-          <div class="hero-card" aria-label="Résumé">
-            <h2 class="card-title">Ce qu’on fait</h2>
-            <dl class="facts">
-              <div>
-                <dt>Sites vitrines</dt>
-                <dd>Pages rapides, accessibles, optimisées.</dd>
-              </div>
-              <div>
-                <dt>Apps web</dt>
-                <dd>Outils métier, portails, back-office.</dd>
-              </div>
-              <div>
-                <dt>Intégrations</dt>
-                <dd>Paiement, email, automatisations.</dd>
-              </div>
-            </dl>
-          </div>
-        </div>
-      </section>
-
-      <section class="section" id="services">
+      <!-- BANNER / HERO (UI kit Le Wagon) -->
+      <section
+        class="banner"
+        style="background-image: linear-gradient(rgba(var(--sv-ink-rgb),0.55), rgba(var(--sv-ink-rgb),0.55)), url('./images/ventoux-banner.png');">
         <div class="container">
-          <h2>Services</h2>
-          <div class="grid">
-            <article class="panel">
-              <h3>Site web</h3>
-              <p>De la landing page au site complet, avec un code propre et une mise en ligne simple.</p>
-              <ul class="list">
-                <li>Structure HTML sémantique</li>
-                <li>Design responsive</li>
-                <li>SEO technique de base</li>
-              </ul>
-            </article>
-
-            <article class="panel">
-              <h3>Application & back-office</h3>
-              <p>Fonctionnalités sur-mesure, auth, rôles, tableaux de bord et workflows.</p>
-              <ul class="list">
-                <li>UX pragmatique</li>
-                <li>Données & règles métier</li>
-                <li>Logs & observabilité</li>
-              </ul>
-            </article>
-
-            <article class="panel">
-              <h3>Maintenance</h3>
-              <p>Corrections, mises à jour, sécurité et petites évolutions avec une cadence claire.</p>
-              <ul class="list">
-                <li>Suivi et priorisation</li>
-                <li>Améliorations continues</li>
-                <li>Documentation légère</li>
-              </ul>
-            </article>
-          </div>
-        </div>
-      </section>
-
-      <section class="section alt" id="loc-vallis">
-        <div class="container">
-          <h2>Loc Vallis</h2>
-          <p class="lead">
-            Loc Vallis est une application pensée pour simplifier la réservation d’hébergements —
-            côté voyageurs et côté hôtes.
+          <img class="banner-logo" src="./images/logo_v2.jpg" alt="Silicon Vallis" width="220" height="56" decoding="async" />
+          <p class="text-uppercase small fw-semibold mb-2">Web • Logiciels • Applis mobiles</p>
+          <h1>Silicon Vallis</h1>
+          <h2>Développeurs et journalistes en Vaucluse</h2>
+          <p>
+            Silicon Vallis accompagne les TPE, gîtes, chambres d’hôtes, indépendants et producteurs locaux :
+            un web clair, utile, et autonome.
           </p>
-
-          <div class="split">
-            <div class="panel">
-              <h3>Pour les voyageurs</h3>
-              <ul class="list">
-                <li>Réservation claire et rapide</li>
-                <li>Paiement en ligne</li>
-                <li>Messagerie liée à la réservation</li>
-              </ul>
-            </div>
-
-            <div class="panel">
-              <h3>Pour les hôtes</h3>
-              <ul class="list">
-                <li>Gestion des demandes et statuts</li>
-                <li>Calendrier / disponibilités</li>
-                <li>Outils admin simples</li>
-              </ul>
-            </div>
+          <div class="d-flex gap-2 flex-wrap">
+            <a class="btn btn-flat btn-lg" href="./contact/">Parler de votre projet</a>
+            <a class="btn btn-ghost btn-lg" href="./loc-vallis/">Découvrir Loc Vallis</a>
           </div>
-
-          <div class="cta-row">
-            <a class="button primary" href="https://gite-angles-3a11bd0457d7.herokuapp.com/" target="_blank" rel="noreferrer">Ouvrir Loc Vallis</a>
-            <a class="button" href="#contact">En savoir plus</a>
-          </div>
-
-          <p class="note">
-            Besoin d’une version “marque blanche” pour ton hébergement ? Dis-nous ce que tu veux gérer.
-          </p>
         </div>
       </section>
 
-      <section class="section" id="contact">
+      <!-- PRÉSENTATION (cards UI kit) -->
+      <section class="py-5 bg-light border-top border-bottom">
         <div class="container">
-          <h2>Contact</h2>
-          <p class="lead">Dis-nous ce que tu veux construire. On répond avec une proposition simple.</p>
-
-          <div class="contact">
-            <div class="panel">
-              <h3>Par email</h3>
-              <p>
-                <a href="mailto:contact@silicon-vallis.fr">contact@silicon-vallis.fr</a>
+          <div class="row g-4">
+            <div class="col-lg-6">
+              <h2 class="h3">Silicon Vallis</h2>
+              <p class="text-secondary">
+                Une agence web de proximité, ancrée dans le Vaucluse. L’objectif : rapprocher les petites entreprises
+                d’outils web simples, utiles et autonomes. Vous avez un projet ? Vous craignez qu'il soit trop lourd pour votre structure ? Parlons-en, entre petits entrepreneurs du territoire, tout simplement !
               </p>
-              <p class="note">(Tu peux remplacer cet email par le bon.)</p>
+
+              <div class="d-grid gap-3">
+                <div class="card-product">
+                  <img src="./images/logo_v2.jpg" alt="Silicon Vallis" />
+                  <div class="card-product-infos">
+                    <h2>Sites marchands et Marketplaces</h2>
+                    <p>Pages rapides, claires, pensées pour convertir.</p>
+                  </div>
+                </div>
+
+                <div class="card-product">
+                  <img src="./images/logo_v2.jpg" alt="Silicon Vallis" />
+                  <div class="card-product-infos">
+                    <h2>Sites vitrines</h2>
+                    <p>Pages rapides, claires, pensées pour convertir.</p>
+                  </div>
+                </div>
+
+                <div class="card-product">
+                  <img src="./images/logo_v2.jpg" alt="Silicon Vallis" />
+                  <div class="card-product-infos">
+                    <h2>Outils métiers</h2>
+                    <p>Automatisations et back-offices pragmatiques.</p>
+                  </div>
+                </div>
+              </div>
             </div>
 
-            <form class="panel" action="#" method="post" aria-label="Formulaire de contact (placeholder)">
-              <h3>Message</h3>
-              <p class="note">Ce formulaire est un placeholder (pas d’envoi côté serveur).</p>
-              <label>
-                <span>Nom</span>
-                <input name="name" autocomplete="name" placeholder="Ton nom" />
-              </label>
-              <label>
-                <span>Email</span>
-                <input name="email" type="email" autocomplete="email" placeholder="toi@exemple.com" />
-              </label>
-              <label>
-                <span>Message</span>
-                <textarea name="message" rows="4" placeholder="Ton besoin, ton délai, ton budget..."></textarea>
-              </label>
-              <button class="button primary" type="submit" data-no-submit>Envoyer (désactivé)</button>
-            </form>
+            <div class="col-lg-6">
+              <div class="card h-100 shadow-sm">
+                <div class="card-body">
+                  <div class="d-flex align-items-center justify-content-between gap-3">
+                    <h2 class="h3 mb-0">Loc Vallis</h2>
+                    <span class="badge text-bg-primary">Produit phare</span>
+                  </div>
+                  <p class="text-secondary mt-3">
+                    Moteur de réservation pour gîtes individuels : proche des plateformes, mais hébergé par le bailleur.
+                  </p>
+                  <p class="fst-italic mb-3">“Remplissez avec les plateformes, fidélisez en direct.”</p>
+                  <ul>
+                    <li>Achat one-shot, pas de commission</li>
+                    <li>Réservations en direct, liberté totale</li>
+                    <li>Site + appli mobile personnalisables (options)</li>
+                    <li>Expertise éditoriale pour mieux vendre votre hébergement</li>
+                  </ul>
+                  <div class="d-flex gap-2 flex-wrap">
+                    <a class="btn btn-flat" href="./loc-vallis/">Voir Loc Vallis</a>
+                    <a class="btn btn-ghost" href="https://www.gite-angles.fr/" target="_blank" rel="noreferrer">Exemple : gite-angles.fr</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- BÉNÉFICES (cards grid UI kit) -->
+      <section class="py-5">
+        <div class="container">
+          <h2 class="h3">Pourquoi c’est utile pour une TPE / un gîte</h2>
+
+          <div class="row g-3 mt-3" aria-label="Bénéfices">
+            <div class="col-12 col-sm-6 col-lg-3">
+              <div class="card-category">
+                Clarté
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 col-lg-3">
+              <div class="card-category">
+                Autonomie
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 col-lg-3">
+              <div class="card-category">
+                Visibilité
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 col-lg-3">
+              <div class="card-category">
+                Conversion
+              </div>
+            </div>
+          </div>
+
+          <div class="row g-3 mt-3">
+            <div class="col-md-6 col-lg-3"><p class="text-secondary mb-0"><strong>Clarté :</strong> des pages simples qui rassurent et expliquent votre offre.</p></div>
+            <div class="col-md-6 col-lg-3"><p class="text-secondary mb-0"><strong>Autonomie :</strong> un outil que vous maîtrisez (et qui vous appartient).</p></div>
+            <div class="col-md-6 col-lg-3"><p class="text-secondary mb-0"><strong>Visibilité :</strong> SEO de base, structure propre, performance.</p></div>
+            <div class="col-md-6 col-lg-3"><p class="text-secondary mb-0"><strong>Conversion :</strong> CTAs clairs : prise de contact, demande de devis.</p></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CTA FINAL (conversion) -->
+      <section class="py-5 bg-light border-top">
+        <div class="container">
+          <div class="row align-items-center g-3">
+            <div class="col-lg-8">
+              <h2 class="h4 mb-1">Vous avez un projet (site, outil, réservation) ?</h2>
+              <p class="text-secondary mb-0">Décrivez votre activité, vos priorités, votre délai. Je vous réponds avec une proposition simple.</p>
+            </div>
+            <div class="col-lg-4 text-lg-end">
+              <a class="btn btn-gradient btn-lg" href="./contact/">Demander un devis</a>
+            </div>
           </div>
         </div>
       </section>
     </main>
 
-    <footer class="site-footer">
-      <div class="container footer-inner">
-        <p>
-          © <span id="year"></span> Silicon Vallis •
-          <a href="#top">Haut de page</a>
-        </p>
+    <!-- FOOTER (UI kit Le Wagon) -->
+    <footer class="footer">
+      <div class="container d-flex flex-column flex-md-row justify-content-between align-items-center gap-2">
+        <div class="footer-links">
+          <a href="./contact/">Contact</a>
+          <a href="./loc-vallis/">Loc Vallis</a>
+          <a href="./realisations/">Réalisations</a>
+        </div>
+        <div class="footer-copyright">© <span id="year"></span> Silicon Vallis — Vaucluse</div>
       </div>
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>

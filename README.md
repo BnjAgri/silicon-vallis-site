@@ -1,6 +1,8 @@
 # Silicon Vallis — site vitrine (statique)
 
-Petit site statique HTML/CSS/JS pour présenter Silicon Vallis et promouvoir Loc Vallis.
+Site vitrine / portfolio statique (HTML/CSS/JS) pour présenter Silicon Vallis et promouvoir Loc Vallis.
+
+Choix (V1) : multi-pages “simples” + Bootstrap (pas de framework, pas de build).
 
 ## Démarrer en local
 
@@ -16,9 +18,13 @@ Puis ouvrir http://localhost:5173
 
 ## Structure
 
-- `index.html`
-- `assets/styles.css`
-- `assets/main.js`
+- `index.html` (Home)
+- `loc-vallis/index.html`
+- `realisations/index.html`
+- `qui-sommes-nous/index.html`
+- `contact/index.html`
+- `assets/styles.css` (surcouches Bootstrap légères)
+- `assets/main.js` (année + pré-remplissage du formulaire)
 
 ## Déploiement
 
