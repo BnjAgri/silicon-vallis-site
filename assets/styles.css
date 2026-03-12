@@ -18,6 +18,7 @@
   --sv-olive: #4f7b5a;
   --sv-terracotta: #d87a5c;
   --sv-sand: #f6e8cf;
+  --sv-card-bg: #fffdf8;
 
   --sv-ink-rgb: 35, 50, 77;
   --sv-olive-rgb: 79, 123, 90;
@@ -47,6 +48,10 @@
 body {
   background: var(--bs-body-bg);
   color: var(--bs-body-color);
+}
+
+.card {
+  background-color: var(--sv-card-bg);
 }
 
 p {
@@ -375,7 +380,7 @@ h2 {
 .card-product {
   overflow: hidden;
   height: 140px;
-  background: #fff;
+  background: var(--sv-card-bg);
   box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
   display: flex;
   align-items: center;
@@ -417,6 +422,46 @@ h2 {
   line-height: 1.4;
   opacity: 0.8;
   margin: 6px 0 0;
+}
+
+.sv-featured-pack {
+  position: relative;
+  border: 2px solid rgba(var(--sv-olive-rgb), 0.45);
+  box-shadow: 0 14px 32px rgba(var(--sv-ink-rgb), 0.14);
+}
+
+.sv-featured-pack::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  background: linear-gradient(180deg, rgba(var(--sv-olive-rgb), 0.08), transparent 34%);
+  pointer-events: none;
+}
+
+.sv-featured-pack .card-body {
+  position: relative;
+}
+
+.sv-featured-pack__badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 4px 10px;
+  border-radius: 999px;
+  background: rgba(var(--sv-olive-rgb), 0.14);
+  color: var(--sv-olive);
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+@media (min-width: 992px) {
+  .sv-featured-pack {
+    transform: translateY(-10px);
+  }
 }
 
 /* ===============
