@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Poppins:wght@600;700&display=swap');
+
 /*
   UI kit Le Wagon (adaptation statique)
   - On reprend les noms de classes / structures du UI kit.
@@ -45,6 +47,15 @@
 body {
   background: var(--bs-body-bg);
   color: var(--bs-body-color);
+}
+
+p {
+  font-family: 'Inter', sans-serif;
+}
+
+h1,
+h2 {
+  font-family: 'Poppins', sans-serif;
 }
 
 /* ===============
