@@ -323,13 +323,6 @@ body {
   width: 100%;
 }
 
-@media (min-width: 992px) {
-  .sv-advantage-card {
-    width: 50%;
-    margin-left: auto;
-  }
-}
-
 /* ===============
    Cards
    =============== */
@@ -387,6 +380,15 @@ body {
 .card-product img.img-contain {
   object-fit: contain;
   background: rgba(var(--sv-sand-rgb), 0.55);
+}
+
+/* ===============
+   Utilitaires
+   =============== */
+
+.sv-flip-x {
+  transform: scaleX(-1);
+  transform-origin: center;
 }
 
 .card-product-infos {
