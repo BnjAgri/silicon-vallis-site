@@ -29,7 +29,7 @@
     <a class="skip-link" href="#contenu">Aller au contenu</a>
 
     <!-- NAVBAR (UI kit Le Wagon) -->
-    <header class="sticky-top">
+    <header class="sticky-top js-site-header">
       <div class="navbar navbar-expand-sm navbar-light navbar-lewagon" aria-label="Navigation principale">
         <div class="container">
           <a class="navbar-brand" href="./index.html" aria-label="Silicon Vallis (accueil)">
@@ -66,18 +66,18 @@
     <main id="contenu">
       <!-- BANNER / HERO (UI kit Le Wagon) -->
       <section
-        class="banner"
+        class="banner sv-hero"
         style="background-image: linear-gradient(rgba(var(--sv-ink-rgb),0.55), rgba(var(--sv-ink-rgb),0.55)), url('./images/ventoux-banner.png');">
         <div class="container">
-          <img class="banner-logo" src="./images/logo_v2.jpg" alt="Silicon Vallis" width="220" height="56" decoding="async" />
-          <p class="text-uppercase small fw-semibold mb-2">Web • Logiciels • Applis mobiles</p>
-          <h1>Silicon Vallis</h1>
-          <h2>Sites web clairs et outils utiles pour les petites entreprises du Vaucluse</h2>
-          <p>
+          <img class="banner-logo sv-reveal--hero" src="./images/logo_v2.jpg" alt="Silicon Vallis" width="220" height="56" decoding="async" />
+          <p class="text-uppercase small fw-semibold mb-2 sv-reveal--hero">Web • Logiciels • Applis mobiles</p>
+          <h1 class="sv-reveal--hero">Silicon Vallis</h1>
+          <h2 class="sv-reveal--hero">Sites web clairs et outils utiles pour les petites entreprises du Vaucluse</h2>
+          <p class="sv-reveal--hero">
             Silicon Vallis accompagne les TPE, gîtes, chambres d’hôtes, indépendants et producteurs locaux :
             des sites qui rassurent, des outils qui font gagner du temps, et un accompagnement simple.
           </p>
-          <div class="d-flex gap-2 flex-wrap">
+          <div class="d-flex gap-2 flex-wrap sv-reveal--hero">
             <a class="btn btn-flat btn-lg" href="./contact/index.html"><i class="bi bi-envelope-paper sv-btn-icon" aria-hidden="true"></i>Recevoir une proposition</a>
             <a class="btn btn-ghost btn-lg" href="./loc-vallis/index.html"><i class="bi bi-house-heart sv-btn-icon" aria-hidden="true"></i>Découvrir notre offre gîtes</a>
           </div>
@@ -85,7 +85,7 @@
       </section>
 
       <!-- PRÉSENTATION (cards UI kit) -->
-      <section class="py-5 bg-light border-top border-bottom">
+      <section class="py-5 bg-light border-top border-bottom sv-reveal-on-scroll">
         <div class="container">
           <div class="row g-4">
             <div class="col-lg-6">
@@ -102,7 +102,7 @@
               </div>
 
               <div class="d-grid gap-3">
-                <div class="card-product">
+                <div class="card-product sv-hover-card">
                   <img src="./images/logo_v2.jpg" alt="Silicon Vallis" />
                   <div class="card-product-infos">
                     <h2><i class="bi bi-cart3 sv-section-icon" aria-hidden="true"></i>Sites marchands et marketplaces</h2>
@@ -110,7 +110,7 @@
                   </div>
                 </div>
 
-                <div class="card-product">
+                <div class="card-product sv-hover-card">
                   <img src="./images/logo_v2.jpg" alt="Silicon Vallis" />
                   <div class="card-product-infos">
                     <h2><i class="bi bi-window-stack sv-section-icon" aria-hidden="true"></i>Sites vitrines</h2>
@@ -118,7 +118,7 @@
                   </div>
                 </div>
 
-                <div class="card-product">
+                <div class="card-product sv-hover-card">
                   <img src="./images/logo_v2.jpg" alt="Silicon Vallis" />
                   <div class="card-product-infos">
                     <h2><i class="bi bi-gear-wide-connected sv-section-icon" aria-hidden="true"></i>Outils métiers</h2>
@@ -129,7 +129,7 @@
             </div>
 
             <div class="col-lg-6">
-              <div class="card h-100 shadow-sm">
+              <div class="card h-100 shadow-sm sv-hover-card">
                 <div class="card-body">
                   <div class="d-flex flex-column flex-md-row gap-4 align-items-start">
                     <div class="flex-grow-1">
@@ -183,7 +183,7 @@
       </section>
 
       <!-- BÉNÉFICES (cards grid UI kit) -->
-      <section class="py-5">
+      <section class="py-5 sv-reveal-on-scroll">
         <div class="container">
           <h2 class="h3"><i class="bi bi-graph-up-arrow sv-section-icon" aria-hidden="true"></i>Pourquoi ça change vraiment quelque chose pour votre activité</h2>
 
@@ -220,7 +220,7 @@
       </section>
 
       <!-- CTA FINAL (conversion) -->
-      <section class="py-5 bg-light border-top">
+      <section class="py-5 bg-light border-top sv-reveal-on-scroll">
         <div class="container">
           <div class="row align-items-center g-3">
             <div class="col-lg-8">
@@ -234,6 +234,13 @@
         </div>
       </section>
     </main>
+
+    <div class="sv-mobile-cta d-lg-none" aria-label="Action rapide">
+      <a class="btn btn-gradient btn-lg w-100" href="./contact/index.html">
+        <i class="bi bi-send sv-btn-icon" aria-hidden="true"></i>
+        Recevoir une proposition
+      </a>
+    </div>
 
     <!-- FOOTER (UI kit Le Wagon) -->
     <footer class="footer">
