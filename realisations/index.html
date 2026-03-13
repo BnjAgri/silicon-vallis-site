@@ -59,11 +59,18 @@
 
 		<main id="contenu">
 			<!-- BANNER -->
-			<section class="banner" style="background-image: linear-gradient(rgba(var(--sv-ink-rgb),0.55), rgba(var(--sv-ink-rgb),0.55)), url('../images/ventoux-banner.png');">
+			<section class="banner sv-hero" style="background-image: linear-gradient(rgba(var(--sv-ink-rgb),0.55), rgba(var(--sv-ink-rgb),0.55)), url('../images/ventoux-banner.png');">
 				<div class="container">
-					<h1>Réalisations</h1>
-					<p>Nos projets — présents et à venir.</p>
-					<a class="btn btn-ghost btn-lg" href="../contact/index.html">Parler de votre projet</a>
+					<div class="row align-items-center g-4">
+						<div class="col-lg-3">
+							<img class="banner-logo sv-reveal--hero" src="../images/logo_v2.jpg" alt="Silicon Vallis" width="220" height="56" decoding="async" />
+						</div>
+						<div class="col-lg-9">
+							<h1 class="sv-reveal--hero">Réalisations</h1>
+							<p class="sv-reveal--hero">Nos projets — présents et à venir.</p>
+							<a class="btn btn-ghost btn-lg sv-reveal--hero" href="../contact/index.html">Parler de votre projet</a>
+						</div>
+					</div>
 				</div>
 			</section>
 
@@ -81,11 +88,23 @@
 									<p class="text-secondary mt-3">
 										Moteur de réservation pour gîtes : achat one-shot, pas de commission, réservations en direct.
 									</p>
-									<ul>
-										<li>Parcours de réservation fluide</li>
-										<li>Outils d’administration simples</li>
-										<li>Personnalisation (site + appli)</li>
-									</ul>
+									<div class="row g-3 align-items-start mb-3">
+										<div class="col-md-8">
+											<ul class="mb-0">
+												<li>Parcours de réservation fluide</li>
+												<li>Outils d’administration simples</li>
+												<li>Personnalisation (site + appli)</li>
+											</ul>
+										</div>
+										<div class="col-md-4 text-md-end">
+											<img
+												class="img-fluid rounded shadow-sm"
+												src="../images/capture_locvallis.jpg"
+												alt="Aperçu Loc Vallis"
+												loading="lazy"
+												decoding="async" />
+										</div>
+									</div>
 									<div class="d-flex gap-2 flex-wrap">
 										<a class="btn btn-flat" href="../loc-vallis/index.html">Voir Loc Vallis</a>
 										<a class="btn btn-ghost" href="https://www.gite-angles.fr/" target="_blank" rel="noreferrer">Exemple : gite-angles.fr</a>

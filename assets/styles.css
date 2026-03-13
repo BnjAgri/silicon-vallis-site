@@ -480,6 +480,30 @@ h2 {
   background: rgba(var(--sv-sand-rgb), 0.55);
 }
 
+.sv-locv-accordion .accordion-item,
+.sv-locv-accordion .accordion-button,
+.sv-locv-accordion .accordion-body {
+  background-color: var(--sv-card-bg);
+}
+
+.sv-locv-accordion .accordion-item {
+  border: 1px solid rgba(var(--sv-ink-rgb), 0.1);
+  border-radius: 12px;
+}
+
+.sv-locv-accordion .accordion-button {
+  color: var(--sv-ink);
+  font-weight: 700;
+}
+
+.sv-locv-accordion .accordion-button:focus {
+  box-shadow: 0 0 0 0.2rem rgba(var(--sv-ink-rgb), 0.15);
+}
+
+.sv-locv-accordion .accordion-button:not(.collapsed) {
+  color: var(--sv-ink);
+}
+
 /* ===============
    Utilitaires
    =============== */
