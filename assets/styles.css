@@ -373,6 +373,54 @@ h2 {
   }
 }
 
+/* ===============
+   Home : rythme visuel & lisibilité
+   (ciblé sur la homepage via .sv-home)
+   =============== */
+
+.sv-home .sv-section {
+  padding-top: clamp(56px, 6vw, 88px);
+  padding-bottom: clamp(56px, 6vw, 88px);
+}
+
+.sv-home .sv-prose {
+  max-width: 700px;
+  line-height: 1.6;
+}
+
+.image-placeholder {
+  display: grid;
+  place-items: center;
+  min-height: 240px;
+  padding: 18px;
+  border-radius: 12px;
+  border: 2px dashed rgba(var(--sv-ink-rgb), 0.28);
+  background: rgba(var(--sv-sand-rgb), 0.55);
+  color: rgba(var(--sv-ink-rgb), 0.75);
+  text-align: center;
+  font-weight: 600;
+}
+
+.banner .image-placeholder {
+  border-color: rgba(255, 255, 255, 0.55);
+  background: rgba(255, 255, 255, 0.08);
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.image-placeholder--hero {
+  min-height: 280px;
+}
+
+@media (max-width: 576px) {
+  .image-placeholder {
+    min-height: 200px;
+  }
+
+  .image-placeholder--hero {
+    min-height: 220px;
+  }
+}
+
 /* Visuel produit (Loc Vallis) */
 
 .loc-vallis-phone {
