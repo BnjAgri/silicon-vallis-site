@@ -122,6 +122,35 @@ h2 {
   display: block;
 }
 
+.navbar-lewagon .nav-link {
+  position: relative;
+  color: rgba(var(--sv-ink-rgb), 0.82);
+  transition: color 140ms ease;
+}
+
+.navbar-lewagon .nav-link:hover,
+.navbar-lewagon .nav-link:focus-visible {
+  color: var(--bs-link-hover-color);
+}
+
+.navbar-lewagon .nav-link.active,
+.navbar-lewagon .nav-link[aria-current='page'] {
+  color: var(--sv-ink);
+  font-weight: 600;
+}
+
+.navbar-lewagon .nav-link.active::after,
+.navbar-lewagon .nav-link[aria-current='page']::after {
+  content: '';
+  position: absolute;
+  left: 0.5rem;
+  right: 0.5rem;
+  bottom: 0.35rem;
+  height: 2px;
+  border-radius: 999px;
+  background: rgba(var(--sv-terracotta-rgb), 0.75);
+}
+
 /* ===============
    Banner
    =============== */
@@ -409,6 +438,8 @@ h2 {
 .cards {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+}
 
 .sv-hover-card,
 .card,
@@ -427,8 +458,6 @@ h2 {
 .card-product:focus-within {
   transform: translateY(-4px);
   box-shadow: 0 14px 30px rgba(var(--sv-ink-rgb), 0.12);
-}
-  gap: 16px;
 }
 
 @media (max-width: 992px) {
