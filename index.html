@@ -69,17 +69,23 @@
         class="banner sv-hero"
         style="background-image: linear-gradient(rgba(var(--sv-ink-rgb),0.55), rgba(var(--sv-ink-rgb),0.55)), url('./images/ventoux-banner.png');">
         <div class="container">
-          <img class="banner-logo sv-reveal--hero" src="./images/logo_v2.jpg" alt="Silicon Vallis" width="220" height="56" decoding="async" />
-          <p class="text-uppercase small fw-semibold mb-2 sv-reveal--hero">Web • Logiciels • Applis mobiles</p>
-          <h1 class="sv-reveal--hero">Silicon Vallis</h1>
-          <h2 class="sv-reveal--hero">Sites web clairs et outils utiles pour les petites entreprises du Vaucluse</h2>
-          <p class="sv-reveal--hero">
-            Silicon Vallis accompagne les TPE, gîtes, chambres d’hôtes, indépendants et producteurs locaux :
-            des sites qui rassurent, des outils qui font gagner du temps, et un accompagnement simple.
-          </p>
-          <div class="d-flex gap-2 flex-wrap sv-reveal--hero">
-            <a class="btn btn-flat btn-lg" href="./contact/index.html"><i class="bi bi-envelope-paper sv-btn-icon" aria-hidden="true"></i>Recevoir une proposition</a>
-            <a class="btn btn-ghost btn-lg" href="./loc-vallis/index.html"><i class="bi bi-house-heart sv-btn-icon" aria-hidden="true"></i>Découvrir notre offre gîtes</a>
+          <div class="row align-items-center g-4">
+            <div class="col-lg-3">
+              <img class="banner-logo sv-reveal--hero" src="./images/logo_v2.jpg" alt="Silicon Vallis" width="220" height="56" decoding="async" />
+            </div>
+            <div class="col-lg-9">
+              <p class="text-uppercase small fw-semibold mb-2 sv-reveal--hero">Web • Logiciels • Applis mobiles</p>
+              <h1 class="sv-reveal--hero">Silicon Vallis</h1>
+              <h2 class="sv-reveal--hero">Sites web clairs et outils utiles pour les petites entreprises du Vaucluse</h2>
+              <p class="sv-reveal--hero">
+                Silicon Vallis accompagne les TPE, gîtes, chambres d’hôtes, indépendants et producteurs locaux :
+                des sites qui rassurent, des outils qui font gagner du temps, et un accompagnement simple.
+              </p>
+              <div class="d-flex gap-2 flex-wrap sv-reveal--hero">
+                <a class="btn btn-flat btn-lg" href="./contact/index.html"><i class="bi bi-envelope-paper sv-btn-icon" aria-hidden="true"></i>Recevoir une proposition</a>
+                <a class="btn btn-ghost btn-lg" href="./loc-vallis/index.html"><i class="bi bi-house-heart sv-btn-icon" aria-hidden="true"></i>Découvrir notre offre gîtes</a>
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -89,7 +95,7 @@
         <div class="container">
           <div class="row g-4">
             <div class="col-lg-6">
-              <h2 class="h3"><i class="bi bi-compass sv-section-icon" aria-hidden="true"></i>Un web utile, pensé pour le terrain</h2>
+              <h2 class="h3 mb-3"><i class="bi bi-compass sv-section-icon" aria-hidden="true"></i>Un web utile, pensé pour le terrain</h2>
               <div class="sv-logo-lead d-flex flex-column flex-sm-row gap-3 align-items-center align-items-sm-stretch mb-3">
                 <div class="sv-logo-lead__logo flex-shrink-0" aria-hidden="true">
                   <img class="sv-logo-lead__img" src="./images/logo_v2.jpg" alt="" />
@@ -103,7 +109,7 @@
 
               <div class="d-grid gap-3">
                 <div class="card-product sv-hover-card">
-                  <img src="./images/logo_v2.jpg" alt="Silicon Vallis" />
+                  <img src="./images/home_shop.jpg" alt="Silicon Vallis" />
                   <div class="card-product-infos">
                     <h2><i class="bi bi-cart3 sv-section-icon" aria-hidden="true"></i>Sites marchands et marketplaces</h2>
                     <p>Vous vendez des produits ou des services ? Nous créons des parcours clairs pour vendre en ligne, en site ou en application.</p>
@@ -111,7 +117,7 @@
                 </div>
 
                 <div class="card-product sv-hover-card">
-                  <img src="./images/logo_v2.jpg" alt="Silicon Vallis" />
+                  <img src="./images/home_vitrine.jpg" alt="Silicon Vallis" />
                   <div class="card-product-infos">
                     <h2><i class="bi bi-window-stack sv-section-icon" aria-hidden="true"></i>Sites vitrines</h2>
                     <p>Des pages rapides, claires et pensées pour transformer vos visiteurs en contacts qualifiés.</p>
@@ -119,7 +125,7 @@
                 </div>
 
                 <div class="card-product sv-hover-card">
-                  <img src="./images/logo_v2.jpg" alt="Silicon Vallis" />
+                  <img src="./images/home_metier.jpg" alt="Silicon Vallis" />
                   <div class="card-product-infos">
                     <h2><i class="bi bi-gear-wide-connected sv-section-icon" aria-hidden="true"></i>Outils métiers</h2>
                     <p>Automatisations et back-offices pragmatiques pour gagner du temps et structurer votre activité.</p>
@@ -159,19 +165,19 @@
                         alt="Aperçu mobile de Loc Vallis"
                         loading="lazy"
                         decoding="async" />
+
+                      <img
+                        class="loc-vallis-stamp mt-5"
+                        src="./images/tampon_2490.png"
+                        alt="2490€ — Loc Vallis"
+                        loading="lazy"
+                        decoding="async" />
                     </div>
                   </div>
 
                   <div class="d-flex flex-column flex-sm-row align-items-center justify-content-sm-between gap-3 flex-wrap mt-3">
-                    <img
-                      class="loc-vallis-stamp"
-                      src="./images/tampon_2490.png"
-                      alt="2490€ — Loc Vallis"
-                      loading="lazy"
-                      decoding="async" />
-
                     <div class="d-flex gap-2 flex-wrap justify-content-center justify-content-sm-end">
-                      <a class="btn btn-flat" href="./loc-vallis/index.html"><i class="bi bi-arrow-right-circle sv-btn-icon" aria-hidden="true"></i>Voir l’offre Loc Vallis</a>
+                      <a class="btn btn-flat btn-loc-vallis" href="./loc-vallis/index.html"><i class="bi bi-arrow-right-circle sv-btn-icon" aria-hidden="true"></i>Découvrez Loc Vallis</a>
                       <a class="btn btn-ghost" href="https://www.gite-angles.fr/" target="_blank" rel="noreferrer"><i class="bi bi-box-arrow-up-right sv-btn-icon" aria-hidden="true"></i>Voir un exemple réel</a>
                     </div>
                   </div>
@@ -211,10 +217,10 @@
           </div>
 
           <div class="row g-3 mt-3">
-            <div class="col-md-6 col-lg-3"><p class="text-secondary mb-0"><strong>Clarté :</strong> des pages simples qui rassurent et expliquent votre offre.</p></div>
-            <div class="col-md-6 col-lg-3"><p class="text-secondary mb-0"><strong>Autonomie :</strong> un outil que vous maîtrisez (et qui vous appartient).</p></div>
-            <div class="col-md-6 col-lg-3"><p class="text-secondary mb-0"><strong>Visibilité :</strong> SEO de base, structure propre, performance.</p></div>
-            <div class="col-md-6 col-lg-3"><p class="text-secondary mb-0"><strong>Conversion :</strong> CTAs clairs : prise de contact, demande de devis.</p></div>
+            <div class="col-md-6 col-lg-3"><p class="text-secondary mb-0">Des pages simples qui rassurent et expliquent votre offre.</p></div>
+            <div class="col-md-6 col-lg-3"><p class="text-secondary mb-0">Un outil que vous maîtrisez (et qui vous appartient).</p></div>
+            <div class="col-md-6 col-lg-3"><p class="text-secondary mb-0">SEO sur mesure, structure propre, performance.</p></div>
+            <div class="col-md-6 col-lg-3"><p class="text-secondary mb-0">CTAs clairs : prise de contact, demande de devis, paiement en ligne.</p></div>
           </div>
         </div>
       </section>

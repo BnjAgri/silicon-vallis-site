@@ -149,8 +149,8 @@ h2 {
 }
 
 .banner .banner-logo {
-  height: 56px;
-  width: auto;
+  width: 100%;
+  height: auto;
   max-width: 100%;
   display: block;
   margin-bottom: 14px;
@@ -202,10 +202,6 @@ h2 {
   .banner p {
     font-size: 16px;
   }
-
-  .banner .banner-logo {
-    height: 44px;
-  }
 }
 
 /* ===============
@@ -252,6 +248,18 @@ h2 {
 .btn-flat:focus-visible {
   outline: 2px solid rgba(var(--sv-sand-rgb), 0.65);
   outline-offset: 2px;
+}
+
+.btn-loc-vallis {
+  background-image: linear-gradient(135deg, rgba(var(--sv-ink-rgb), 0.92), rgba(var(--sv-olive-rgb), 0.78));
+  border-color: transparent;
+}
+
+.btn-loc-vallis:hover,
+.btn-loc-vallis:focus-visible,
+.btn-loc-vallis:active {
+  background-image: linear-gradient(135deg, rgba(var(--sv-ink-rgb), 0.92), rgba(var(--sv-olive-rgb), 0.78));
+  border-color: transparent;
 }
 
 @media (prefers-reduced-motion: reduce) {
