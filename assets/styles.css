@@ -401,6 +401,13 @@ h2 {
   font-weight: 600;
 }
 
+.image-placeholder img {
+  max-width: 100%;
+  height: auto;
+  max-height: 320px;
+  object-fit: contain;
+}
+
 .banner .image-placeholder {
   border-color: rgba(255, 255, 255, 0.55);
   background: rgba(255, 255, 255, 0.08);
