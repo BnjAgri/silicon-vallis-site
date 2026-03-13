@@ -59,11 +59,18 @@
 
 		<main id="contenu">
 			<!-- BANNER -->
-			<section class="banner" style="background-image: linear-gradient(rgba(var(--sv-ink-rgb),0.55), rgba(var(--sv-ink-rgb),0.55)), url('../images/ventoux-banner.png');">
+			<section class="banner sv-hero" style="background-image: linear-gradient(rgba(var(--sv-ink-rgb),0.55), rgba(var(--sv-ink-rgb),0.55)), url('../images/ventoux-banner.png');">
 				<div class="container">
-					<h1>Contact</h1>
-					<p>Décrivez votre activité et votre besoin. Réponse simple : V1 claire + étapes suivantes.</p>
-					<a class="btn btn-ghost btn-lg" href="mailto:contact@silicon-vallis.fr">contact@silicon-vallis.fr</a>
+					<div class="row align-items-center g-4">
+						<div class="col-lg-3">
+							<img class="banner-logo sv-reveal--hero" src="../images/logo_v2.jpg" alt="Silicon Vallis" width="220" height="56" decoding="async" />
+						</div>
+						<div class="col-lg-9">
+							<h1 class="sv-reveal--hero">Contact</h1>
+							<p class="sv-reveal--hero">Décrivez votre activité et votre besoin. On en discute !</p>
+							<a class="btn btn-ghost btn-lg sv-reveal--hero" href="mailto:contact@silicon-vallis.fr">contact@silicon-vallis.fr</a>
+						</div>
+					</div>
 				</div>
 			</section>
 
@@ -74,12 +81,12 @@
 						<div class="col-lg-5">
 							<div class="card h-100">
 								<div class="card-body">
-									<h2 class="h5">Pour répondre vite</h2>
+									<h2 class="h5">Faisons connaissance</h2>
 									<ul class="mb-0">
-										<li>Votre activité (TPE, gîte, producteur, indépendant…)</li>
-										<li>Votre objectif (contacts, réservation, visibilité…)</li>
-										<li>Votre délai (saison, urgence, planning)</li>
-										<li>Votre budget (même une fourchette)</li>
+										<li>Quelle est votre activité (TPE, gîte, producteur, indépendant…) ?</li>
+										<li>Parlez-nous de votre objectif (contacts, réservation, visibilité…)</li>
+										<li>Quelles sont vos contraintes de délai ?</li>
+										<li>Avez-vous une idée de votre budget (même une fourchette)?</li>
 									</ul>
 								</div>
 							</div>
@@ -88,16 +95,13 @@
 						<div class="col-lg-7">
 							<div class="card shadow-sm">
 								<div class="card-body">
-									<h2 class="h5">Formulaire</h2>
+									<h2 class="h5">Contact</h2>
 									<p class="text-secondary">
-										Site statique : ce formulaire ouvre votre client mail.
+										Ce formulaire ouvre votre client mail.
 										Sinon, envoyez un message à <a href="mailto:contact@silicon-vallis.fr">contact@silicon-vallis.fr</a>.
 									</p>
 
-									<!--
-										Choix structurant (V1) : pas de back-end d’envoi. Simple et maintenable.
-										TODO : brancher Formspree/Netlify Forms ou un endpoint Rails plus tard.
-									-->
+									
 									<form
 										data-contact-form
 										action="mailto:contact@silicon-vallis.fr"
@@ -133,7 +137,6 @@
 											</div>
 											<div class="col-12 d-flex gap-2 flex-wrap">
 												<button class="btn btn-flat btn-lg" type="submit">Envoyer</button>
-												<a class="btn btn-ghost btn-lg" href="../loc-vallis/index.html">Voir Loc Vallis</a>
 											</div>
 										</div>
 									</form>
