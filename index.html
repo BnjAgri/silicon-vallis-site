@@ -4,15 +4,15 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Silicon Vallis — sites web & outils simples (Vaucluse)</title>
+    <title>Silicon Vallis — sites web utiles & réservation directe (Vaucluse)</title>
     <meta
       name="description"
-      content="Agence web de proximité dans le Vaucluse : sites vitrines, outils simples, et Loc Vallis — moteur de réservation pour gîtes, sans commission." />
+      content="Silicon Vallis (Vaucluse) : création de sites web utiles pour TPE locales + Loc Vallis, solution de réservation directe pour gîtes (sans commission)." />
 
     <meta property="og:title" content="Silicon Vallis" />
     <meta
       property="og:description"
-      content="Sites web et outils utiles pour petites entreprises du Vaucluse. Découvrez Loc Vallis : réservations en direct, sans commission." />
+      content="Sites web utiles pour TPE locales (Vaucluse) + Loc Vallis : réservation directe pour gîtes, sans commission." />
     <meta property="og:type" content="website" />
 
     <!-- Choix structurant (V1) : site statique multi-pages en Bootstrap, sans build ni framework. -->
@@ -55,7 +55,7 @@
               <li class="nav-item"><a class="nav-link" href="./qui-sommes-nous/index.html">Qui sommes-nous ?</a></li>
               <li class="nav-item"><a class="nav-link" href="./contact/index.html">Contact</a></li>
               <li class="nav-item ms-sm-2">
-                <a class="btn btn-flat" href="./contact/index.html">Demander un devis</a>
+                <a class="btn btn-flat" href="./contact/index.html">Me contacter</a>
               </li>
             </ul>
           </div>
@@ -64,72 +64,170 @@
     </header>
 
     <main id="contenu">
-      <!-- BANNER / HERO (UI kit Le Wagon) -->
+      <!-- 1) HERO -->
       <section
         class="banner sv-hero"
-        style="background-image: linear-gradient(rgba(var(--sv-ink-rgb),0.55), rgba(var(--sv-ink-rgb),0.55)), url('./images/ventoux-banner.png');">
+        style="background-image: linear-gradient(rgba(var(--sv-ink-rgb),0.60), rgba(var(--sv-ink-rgb),0.60)), url('./images/ventoux-banner.png');">
         <div class="container">
           <div class="row align-items-center g-4">
             <div class="col-lg-3">
               <img class="banner-logo sv-reveal--hero" src="./images/logo_v2.jpg" alt="Silicon Vallis" width="220" height="56" decoding="async" />
             </div>
             <div class="col-lg-9">
-              <p class="text-uppercase small fw-semibold mb-2 sv-reveal--hero">Web • Logiciels • Applis mobiles</p>
+              <p class="text-uppercase small fw-semibold mb-2 sv-reveal--hero">Vaucluse • sites web utiles • réservation directe</p>
               <h1 class="sv-reveal--hero">Silicon Vallis</h1>
-              <h2 class="sv-reveal--hero">Sites web clairs et outils utiles pour les petites entreprises du Vaucluse</h2>
+              <h2 class="sv-reveal--hero">Des sites web utiles pour les TPE locales — et une spécialité gîtes : Loc Vallis</h2>
               <p class="sv-reveal--hero">
-                Silicon Vallis accompagne les TPE, gîtes, chambres d’hôtes, indépendants et producteurs locaux :
-                des sites qui rassurent, des outils qui font gagner du temps, et un accompagnement simple.
+                On construit des pages claires (qui expliquent votre offre) et des parcours simples (qui déclenchent un contact).
+                Pour les gîtes et chambres d’hôtes, <strong>Loc Vallis</strong> aide à reprendre des réservations en direct, sans commission.
               </p>
               <div class="d-flex gap-2 flex-wrap sv-reveal--hero">
-                <a class="btn btn-flat btn-lg" href="./contact/index.html"><i class="bi bi-envelope-paper sv-btn-icon" aria-hidden="true"></i>Recevoir une proposition</a>
-                <a class="btn btn-ghost btn-lg" href="./loc-vallis/index.html"><i class="bi bi-house-heart sv-btn-icon" aria-hidden="true"></i>Découvrir notre offre gîtes</a>
+                <a class="btn btn-flat btn-lg" href="./contact/index.html">
+                  <i class="bi bi-chat-dots sv-btn-icon" aria-hidden="true"></i>
+                  Discuter de votre projet
+                </a>
+                <a class="btn btn-ghost btn-lg" href="./loc-vallis/index.html">
+                  <i class="bi bi-house-heart sv-btn-icon" aria-hidden="true"></i>
+                  Découvrir Loc Vallis
+                </a>
+              </div>
+              <p class="sv-reveal--hero mb-0">
+                <a class="link-light" href="https://www.gite-angles.fr/" target="_blank" rel="noreferrer">Voir un exemple réel : gite-angles.fr</a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 2) POUR QUI -->
+      <section class="py-5 bg-light border-top border-bottom sv-reveal-on-scroll" aria-label="Pour qui">
+        <div class="container">
+          <div class="row g-4 align-items-start">
+            <div class="col-lg-4">
+              <h2 class="h3 mb-2"><i class="bi bi-people sv-section-icon" aria-hidden="true"></i>Pour qui ?</h2>
+              <p class="text-secondary mb-0">
+                Silicon Vallis s’adresse aux petites structures du coin : on part d’une V1 simple, puis on améliore.
+              </p>
+            </div>
+            <div class="col-lg-8">
+              <div class="row g-3">
+                <div class="col-12 col-sm-6">
+                  <div class="card h-100 shadow-sm sv-hover-card">
+                    <div class="card-body">
+                      <div class="sv-proof-icon"><i class="bi bi-house-check" aria-hidden="true"></i></div>
+                      <h3 class="h6 mb-1">Gîtes</h3>
+                      <p class="text-secondary mb-0">Réservations en direct, parcours simple, autonomie.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-sm-6">
+                  <div class="card h-100 shadow-sm sv-hover-card">
+                    <div class="card-body">
+                      <div class="sv-proof-icon"><i class="bi bi-house-heart" aria-hidden="true"></i></div>
+                      <h3 class="h6 mb-1">Chambres d’hôtes</h3>
+                      <p class="text-secondary mb-0">Un site qui rassure et facilite la demande / réservation.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-sm-6">
+                  <div class="card h-100 shadow-sm sv-hover-card">
+                    <div class="card-body">
+                      <div class="sv-proof-icon"><i class="bi bi-shop" aria-hidden="true"></i></div>
+                      <h3 class="h6 mb-1">Petites entreprises locales</h3>
+                      <p class="text-secondary mb-0">Artisans, producteurs, commerces : une offre claire, un contact facile.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-sm-6">
+                  <div class="card h-100 shadow-sm sv-hover-card">
+                    <div class="card-body">
+                      <div class="sv-proof-icon"><i class="bi bi-person-badge" aria-hidden="true"></i></div>
+                      <h3 class="h6 mb-1">Indépendants</h3>
+                      <p class="text-secondary mb-0">Prestations lisibles, demandes qualifiées, prise de rendez-vous simple.</p>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </section>
 
-      <!-- PRÉSENTATION (cards UI kit) -->
-      <section class="py-5 bg-light border-top border-bottom sv-reveal-on-scroll">
+      <!-- 3) PROBLÈMES RÉSOLUS -->
+      <section class="py-5 sv-reveal-on-scroll" aria-label="Problèmes résolus">
         <div class="container">
-          <div class="row g-4">
-            <div class="col-lg-6">
-              <h2 class="h3 mb-3"><i class="bi bi-compass sv-section-icon" aria-hidden="true"></i>Un web utile, pensé pour le terrain</h2>
-              <div class="sv-logo-lead d-flex flex-column flex-sm-row gap-3 align-items-center align-items-sm-stretch mb-3">
-                <div class="sv-logo-lead__logo flex-shrink-0" aria-hidden="true">
-                  <img class="sv-logo-lead__img" src="./images/logo_v2.jpg" alt="" />
-                </div>
+          <h2 class="h3"><i class="bi bi-wrench-adjustable-circle sv-section-icon" aria-hidden="true"></i>Les problèmes qu’on règle (concrètement)</h2>
+          <p class="text-secondary mb-0">
+            L’objectif n’est pas “d’avoir un site”. L’objectif, c’est <strong>d’obtenir des contacts</strong> et de rester autonome.
+          </p>
 
-                <p class="text-secondary">
-                  Une agence web de proximité, ancrée dans le Vaucluse. L’objectif : donner aux petites entreprises
-                  des outils simples, utiles et autonomes. Vous avez un projet mais vous craignez quelque chose de trop lourd pour votre structure ? Parlons-en simplement.
-                </p>
+          <div class="row g-3 mt-3" aria-label="Problèmes">
+            <div class="col-12 col-md-6 col-lg-3">
+              <div class="card h-100 shadow-sm sv-hover-card">
+                <div class="card-body">
+                  <div class="sv-proof-icon"><i class="bi bi-diagram-3" aria-hidden="true"></i></div>
+                  <h3 class="h6 mb-1">Dépendance aux plateformes</h3>
+                  <p class="text-secondary mb-0">Vous existez ailleurs si besoin, mais votre meilleur client passe chez vous.</p>
+                </div>
               </div>
-
-              <div class="d-grid gap-3">
-                <div class="card-product sv-hover-card">
-                  <img src="./images/home_shop.jpg" alt="Silicon Vallis" />
-                  <div class="card-product-infos">
-                    <h2><i class="bi bi-cart3 sv-section-icon" aria-hidden="true"></i>Sites marchands et marketplaces</h2>
-                    <p>Vous vendez des produits ou des services ? Nous créons des parcours clairs pour vendre en ligne, en site ou en application.</p>
-                  </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3">
+              <div class="card h-100 shadow-sm sv-hover-card">
+                <div class="card-body">
+                  <div class="sv-proof-icon"><i class="bi bi-cash-coin" aria-hidden="true"></i></div>
+                  <h3 class="h6 mb-1">Commissions</h3>
+                  <p class="text-secondary mb-0">Plus de direct = plus de marge et plus de liberté.</p>
                 </div>
-
-                <div class="card-product sv-hover-card">
-                  <img src="./images/home_vitrine.jpg" alt="Silicon Vallis" />
-                  <div class="card-product-infos">
-                    <h2><i class="bi bi-window-stack sv-section-icon" aria-hidden="true"></i>Sites vitrines</h2>
-                    <p>Des pages rapides, claires et pensées pour transformer vos visiteurs en contacts qualifiés.</p>
-                  </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3">
+              <div class="card h-100 shadow-sm sv-hover-card">
+                <div class="card-body">
+                  <div class="sv-proof-icon"><i class="bi bi-window" aria-hidden="true"></i></div>
+                  <h3 class="h6 mb-1">Sites inutiles</h3>
+                  <p class="text-secondary mb-0">On structure le message, les sections et l’action à faire (contact / devis).</p>
                 </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3">
+              <div class="card h-100 shadow-sm sv-hover-card">
+                <div class="card-body">
+                  <div class="sv-proof-icon"><i class="bi bi-sliders2" aria-hidden="true"></i></div>
+                  <h3 class="h6 mb-1">Outils trop complexes</h3>
+                  <p class="text-secondary mb-0">V1 simple, prise en main rapide, et on garde l’utile.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
-                <div class="card-product sv-hover-card">
-                  <img src="./images/home_metier.jpg" alt="Silicon Vallis" />
-                  <div class="card-product-infos">
-                    <h2><i class="bi bi-gear-wide-connected sv-section-icon" aria-hidden="true"></i>Outils métiers</h2>
-                    <p>Automatisations et back-offices pragmatiques pour gagner du temps et structurer votre activité.</p>
-                  </div>
+      <!-- 4) OFFRES -->
+      <section class="py-5 bg-light border-top border-bottom sv-reveal-on-scroll" aria-label="Offres">
+        <div class="container">
+          <div class="d-flex flex-column flex-lg-row align-items-start align-items-lg-end justify-content-between gap-2">
+            <div>
+              <h2 class="h3 mb-1"><i class="bi bi-box-seam sv-section-icon" aria-hidden="true"></i>Offres</h2>
+              <p class="text-secondary mb-0">Deux entrées claires : votre site utile, ou votre réservation directe.</p>
+            </div>
+            <a class="btn btn-ghost" href="./contact/index.html"><i class="bi bi-envelope-paper sv-btn-icon" aria-hidden="true"></i>Me contacter</a>
+          </div>
+
+          <div class="row g-3 mt-3" aria-label="Offres">
+            <div class="col-lg-6">
+              <div class="card h-100 shadow-sm sv-hover-card">
+                <div class="card-body">
+                  <h3 class="h4"><i class="bi bi-window-stack sv-section-icon" aria-hidden="true"></i>Création de sites web utiles</h3>
+                  <p class="text-secondary">
+                    Un site qui explique clairement <strong>ce que vous faites</strong>, <strong>pour qui</strong>, et <strong>comment vous contacter</strong>.
+                  </p>
+                  <ul class="mb-3 sv-icon-list">
+                    <li><i class="bi bi-check2-circle" aria-hidden="true"></i><span>Structure et rédaction : simple, humain, sans jargon</span></li>
+                    <li><i class="bi bi-phone" aria-hidden="true"></i><span>Responsive : mobile, tablette, ordinateur</span></li>
+                    <li><i class="bi bi-search" aria-hidden="true"></i><span>SEO de base : titres, metas, hiérarchie propre</span></li>
+                    <li><i class="bi bi-cursor-fill" aria-hidden="true"></i><span>CTA clair : demande de devis / prise de contact</span></li>
+                  </ul>
+                  <a class="btn btn-flat" href="./contact/index.html"><i class="bi bi-send sv-btn-icon" aria-hidden="true"></i>Parler de votre site</a>
                 </div>
               </div>
             </div>
@@ -137,28 +235,118 @@
             <div class="col-lg-6">
               <div class="card h-100 shadow-sm sv-hover-card">
                 <div class="card-body">
-                  <div class="d-flex flex-column flex-md-row gap-4 align-items-start">
+                  <div class="d-flex align-items-center justify-content-between gap-3 flex-wrap">
+                    <h3 class="h4 mb-0"><i class="bi bi-house-check sv-section-icon" aria-hidden="true"></i>Loc Vallis</h3>
+                    <span class="badge text-bg-primary">Spécialité gîtes</span>
+                  </div>
+                  <p class="text-secondary mt-3">
+                    Votre site de réservation <strong>en direct</strong> : vous gardez la main sur votre activité, sans commission.
+                  </p>
+                  <ul class="mb-3 sv-icon-list">
+                    <li><i class="bi bi-calendar2-check" aria-hidden="true"></i><span>Réservation directe : parcours clair côté voyageurs</span></li>
+                    <li><i class="bi bi-cash-coin" aria-hidden="true"></i><span>Pas de commission : vous investissez une fois</span></li>
+                    <li><i class="bi bi-credit-card-2-front" aria-hidden="true"></i><span>Paiement sécurisé via Stripe</span></li>
+                    <li><i class="bi bi-inboxes" aria-hidden="true"></i><span>Back-office simple : demandes, statuts, calendrier</span></li>
+                  </ul>
+                  <div class="d-flex gap-2 flex-wrap">
+                    <a class="btn btn-flat btn-loc-vallis" href="./loc-vallis/index.html"><i class="bi bi-arrow-right-circle sv-btn-icon" aria-hidden="true"></i>Voir Loc Vallis</a>
+                    <a
+                      class="btn btn-ghost"
+                      href="./contact/index.html?activity=G%C3%AEte%20/%20h%C3%A9bergement&message=Bonjour%2C%20je%20souhaite%20en%20savoir%20plus%20sur%20Loc%20Vallis%20(et%20obtenir%20un%20devis).">
+                      <i class="bi bi-chat-dots sv-btn-icon" aria-hidden="true"></i>
+                      Recevoir un devis
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 5) SECTION FORTE LOC VALLIS -->
+      <section class="py-5 sv-reveal-on-scroll" aria-label="Loc Vallis">
+        <div class="container">
+          <div class="row g-4 align-items-start">
+            <div class="col-lg-7">
+              <h2 class="h3"><i class="bi bi-house-heart sv-section-icon" aria-hidden="true"></i>Loc Vallis : réservation directe, sans commission</h2>
+              <p class="text-secondary">
+                Pensé pour les gîtes et petites structures touristiques : un outil complet, mais lisible, qui reste simple à gérer au quotidien.
+              </p>
+
+              <div class="row g-3" aria-label="Bénéfices Loc Vallis">
+                <div class="col-md-6">
+                  <div class="card h-100 shadow-sm sv-hover-card">
+                    <div class="card-body">
+                      <div class="sv-proof-icon"><i class="bi bi-signpost-split" aria-hidden="true"></i></div>
+                      <h3 class="h6 mb-1">Réservation directe</h3>
+                      <p class="text-secondary mb-0">Un parcours clair pour vos voyageurs, sur mobile comme sur ordinateur.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="card h-100 shadow-sm sv-hover-card">
+                    <div class="card-body">
+                      <div class="sv-proof-icon"><i class="bi bi-percent" aria-hidden="true"></i></div>
+                      <h3 class="h6 mb-1">Pas de commission</h3>
+                      <p class="text-secondary mb-0">Votre réservation est chez vous : pas de prélèvement à chaque vente.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="card h-100 shadow-sm sv-hover-card">
+                    <div class="card-body">
+                      <div class="sv-proof-icon"><i class="bi bi-credit-card" aria-hidden="true"></i></div>
+                      <h3 class="h6 mb-1">Paiement Stripe</h3>
+                      <p class="text-secondary mb-0">Paiement sécurisé en ligne (selon vos règles : acompte, solde, etc.).</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="card h-100 shadow-sm sv-hover-card">
+                    <div class="card-body">
+                      <div class="sv-proof-icon"><i class="bi bi-gear" aria-hidden="true"></i></div>
+                      <h3 class="h6 mb-1">Back-office simple</h3>
+                      <p class="text-secondary mb-0">Calendrier, demandes, statuts, messages : l’essentiel au même endroit.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="d-flex gap-2 flex-wrap mt-3">
+                <a class="btn btn-flat btn-loc-vallis" href="./loc-vallis/index.html"><i class="bi bi-arrow-right-circle sv-btn-icon" aria-hidden="true"></i>Découvrir Loc Vallis</a>
+                <a class="btn btn-ghost" href="https://www.gite-angles.fr/" target="_blank" rel="noreferrer"><i class="bi bi-box-arrow-up-right sv-btn-icon" aria-hidden="true"></i>Voir un exemple réel</a>
+                <a
+                  class="btn btn-ghost"
+                  href="./contact/index.html?activity=G%C3%AEte%20/%20h%C3%A9bergement&message=Bonjour%2C%20je%20souhaite%20un%20devis%20pour%20Loc%20Vallis%20(achat%20one-shot%2C%20sans%20commission).">
+                  <i class="bi bi-send sv-btn-icon" aria-hidden="true"></i>
+                  Recevoir mon devis
+                </a>
+              </div>
+              <p class="text-secondary mt-3 mb-0">
+                Vous hésitez ? On commence par comprendre votre hébergement, votre saison et votre façon de travailler — puis on propose le bon niveau de solution.
+              </p>
+            </div>
+
+            <div class="col-lg-5">
+              <div class="card h-100 shadow-sm sv-hover-card">
+                <div class="card-body">
+                  <div class="d-flex flex-column flex-sm-row gap-4 align-items-start">
                     <div class="flex-grow-1">
-                      <div class="d-flex align-items-center justify-content-between gap-3">
-                        <h2 class="h3 mb-0"><i class="bi bi-house-check sv-section-icon" aria-hidden="true"></i>Loc Vallis</h2>
-                        <span class="badge text-bg-primary">Produit phare</span>
-                      </div>
-                      <p class="text-secondary mt-3">
-                        Votre site de réservation pour gîte. <br>Sans commission. 100% chez vous.
+                      <h3 class="h5"><i class="bi bi-stars sv-section-icon" aria-hidden="true"></i>Une spécialité (vraiment) adaptée aux gîtes</h3>
+                      <p class="text-secondary">
+                        L’idée : garder la simplicité côté hôte, tout en proposant une expérience rassurante côté voyageurs.
                       </p>
-                      <p class="fst-italic mb-3">“Utilisez les plateformes si besoin. Gardez vos meilleurs clients en direct.”</p>
-                      <ul class="list-unstyled mb-0 sv-icon-list">
-                        <li><i class="bi bi-calendar2-check" aria-hidden="true"></i><span>Un site de réservation simple et complet</span></li>
-                        <li><i class="bi bi-cash-coin" aria-hidden="true"></i><span>Achat one-shot, sans commission sur vos réservations</span></li>
-                        <li><i class="bi bi-house-lock" aria-hidden="true"></i><span>Réservations en direct, relation client maîtrisée</span></li>
-                        <li><i class="bi bi-phone" aria-hidden="true"></i><span>Site personnalisable, avec application mobile en option</span></li>
-                        <li><i class="bi bi-pencil-square" aria-hidden="true"></i><span>Un vrai travail éditorial pour mieux valoriser votre hébergement</span></li>
+                      <ul class="mb-0 sv-icon-list">
+                        <li><i class="bi bi-hand-index-thumb" aria-hidden="true"></i><span>Mise en place accompagnée : on paramètre ensemble</span></li>
+                        <li><i class="bi bi-person-check" aria-hidden="true"></i><span>Prise en main rapide, sans “usine à gaz”</span></li>
+                        <li><i class="bi bi-house-lock" aria-hidden="true"></i><span>Votre outil, votre marque, votre relation client</span></li>
                       </ul>
-                      <p class="text-secondary mt-3">Vous avez un gîte ou des chambres d’hôtes ? Vous savez qu’une part trop importante de votre chiffre d’affaires part chez les plateformes ? Reprenez la main.<br>
-                      Gardez les fonctionnalités utiles, un back-office simple, et un site qui travaille enfin pour vous.</p>
+                      <hr />
+                      <p class="text-secondary mb-0"><strong>À partir de 2 490 € HT</strong> (Pack Essentiel).</p>
                     </div>
 
-                    <div class="flex-shrink-0 align-self-center align-self-md-start">
+                    <div class="flex-shrink-0 align-self-center align-self-sm-start">
                       <img
                         class="loc-vallis-phone img-fluid"
                         src="./images/smartphone.png"
@@ -167,18 +355,11 @@
                         decoding="async" />
 
                       <img
-                        class="loc-vallis-stamp mt-5"
+                        class="loc-vallis-stamp mt-4"
                         src="./images/tampon_2490.png"
-                        alt="2490€ — Loc Vallis"
+                        alt="2490€ — Pack Essentiel Loc Vallis"
                         loading="lazy"
                         decoding="async" />
-                    </div>
-                  </div>
-
-                  <div class="d-flex flex-column flex-sm-row align-items-center justify-content-sm-between gap-3 flex-wrap mt-3">
-                    <div class="d-flex gap-2 flex-wrap justify-content-center justify-content-sm-end">
-                      <a class="btn btn-flat btn-loc-vallis" href="./loc-vallis/index.html"><i class="bi bi-arrow-right-circle sv-btn-icon" aria-hidden="true"></i>Découvrez Loc Vallis</a>
-                      <a class="btn btn-ghost" href="https://www.gite-angles.fr/" target="_blank" rel="noreferrer"><i class="bi bi-box-arrow-up-right sv-btn-icon" aria-hidden="true"></i>Voir un exemple réel</a>
                     </div>
                   </div>
                 </div>
@@ -188,53 +369,71 @@
         </div>
       </section>
 
-      <!-- BÉNÉFICES (cards grid UI kit) -->
-      <section class="py-5 sv-reveal-on-scroll">
+      <!-- 6) CRÉDIBILITÉ -->
+      <section class="py-5 bg-light border-top border-bottom sv-reveal-on-scroll" aria-label="Crédibilité">
         <div class="container">
-          <h2 class="h3"><i class="bi bi-graph-up-arrow sv-section-icon" aria-hidden="true"></i>Pourquoi ça change vraiment quelque chose pour votre activité</h2>
-
-          <div class="row g-3 mt-3" aria-label="Bénéfices">
-            <div class="col-12 col-sm-6 col-lg-3">
-              <div class="card-category">
-                <i class="bi bi-lightbulb me-2" aria-hidden="true"></i>Clarté
+          <div class="row g-4 align-items-start">
+            <div class="col-lg-5">
+              <h2 class="h3 mb-2"><i class="bi bi-patch-check sv-section-icon" aria-hidden="true"></i>Un profil terrain + dev + rédaction</h2>
+              <p class="text-secondary mb-3">
+                Un seul interlocuteur, local, avec une approche pragmatique : comprendre d’abord, construire ensuite.
+              </p>
+              <div class="d-flex gap-2 flex-wrap">
+                <a class="btn btn-ghost" href="./qui-sommes-nous/index.html"><i class="bi bi-person-lines-fill sv-btn-icon" aria-hidden="true"></i>Voir le parcours</a>
+                <a class="btn btn-flat" href="./contact/index.html"><i class="bi bi-chat-dots sv-btn-icon" aria-hidden="true"></i>Poser une question</a>
               </div>
             </div>
-            <div class="col-12 col-sm-6 col-lg-3">
-              <div class="card-category">
-                <i class="bi bi-person-check me-2" aria-hidden="true"></i>Autonomie
+            <div class="col-lg-7">
+              <div class="row g-3" aria-label="Preuves">
+                <div class="col-md-4">
+                  <div class="card h-100 shadow-sm sv-hover-card">
+                    <div class="card-body">
+                      <div class="sv-proof-icon"><i class="bi bi-pencil-square" aria-hidden="true"></i></div>
+                      <h3 class="h6 mb-1">Rédaction</h3>
+                      <p class="text-secondary mb-0">Structurer, expliquer, rendre simple et concret.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="card h-100 shadow-sm sv-hover-card">
+                    <div class="card-body">
+                      <div class="sv-proof-icon"><i class="bi bi-tree" aria-hidden="true"></i></div>
+                      <h3 class="h6 mb-1">Terrain</h3>
+                      <p class="text-secondary mb-0">Réflexes de TPE : temps, budget, efficacité.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="card h-100 shadow-sm sv-hover-card">
+                    <div class="card-body">
+                      <div class="sv-proof-icon"><i class="bi bi-code-slash" aria-hidden="true"></i></div>
+                      <h3 class="h6 mb-1">Développement</h3>
+                      <p class="text-secondary mb-0">Solutions robustes, maintenables, sans complexité inutile.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card shadow-sm mt-3 sv-hover-card">
+                <div class="card-body">
+                  <h3 class="h6 mb-1"><i class="bi bi-geo-alt sv-section-icon" aria-hidden="true"></i>Local : Vaucluse</h3>
+                  <p class="text-secondary mb-0">On peut se parler facilement et ajuster le projet au fil du temps.</p>
+                </div>
               </div>
             </div>
-            <div class="col-12 col-sm-6 col-lg-3">
-              <div class="card-category">
-                <i class="bi bi-binoculars me-2" aria-hidden="true"></i>Visibilité
-              </div>
-            </div>
-            <div class="col-12 col-sm-6 col-lg-3">
-              <div class="card-category">
-                <i class="bi bi-cursor-fill me-2" aria-hidden="true"></i>Conversion
-              </div>
-            </div>
-          </div>
-
-          <div class="row g-3 mt-3">
-            <div class="col-md-6 col-lg-3"><p class="text-secondary mb-0">Des pages simples qui rassurent et expliquent votre offre.</p></div>
-            <div class="col-md-6 col-lg-3"><p class="text-secondary mb-0">Un outil que vous maîtrisez (et qui vous appartient).</p></div>
-            <div class="col-md-6 col-lg-3"><p class="text-secondary mb-0">SEO sur mesure, structure propre, performance.</p></div>
-            <div class="col-md-6 col-lg-3"><p class="text-secondary mb-0">CTAs clairs : prise de contact, demande de devis, paiement en ligne.</p></div>
           </div>
         </div>
       </section>
 
-      <!-- CTA FINAL (conversion) -->
-      <section class="py-5 bg-light border-top sv-reveal-on-scroll">
+      <!-- 7) CTA FINAL -->
+      <section class="py-5 sv-reveal-on-scroll" aria-label="Contact">
         <div class="container">
           <div class="row align-items-center g-3">
             <div class="col-lg-8">
-              <h2 class="h4 mb-1"><i class="bi bi-rocket-takeoff sv-section-icon" aria-hidden="true"></i>Vous avez un projet de site, d’outil ou de réservation en direct ?</h2>
-              <p class="text-secondary mb-0">Décrivez votre activité, vos priorités et votre délai : vous recevrez une proposition simple et adaptée.</p>
+              <h2 class="h4 mb-1"><i class="bi bi-rocket-takeoff sv-section-icon" aria-hidden="true"></i>Vous voulez clarifier votre offre (et générer des demandes) ?</h2>
+              <p class="text-secondary mb-0">Décrivez votre activité et votre priorité : je réponds avec une proposition simple.</p>
             </div>
             <div class="col-lg-4 text-lg-end">
-              <a class="btn btn-gradient btn-lg" href="./contact/index.html"><i class="bi bi-send sv-btn-icon" aria-hidden="true"></i>Recevoir une proposition</a>
+              <a class="btn btn-gradient btn-lg" href="./contact/index.html"><i class="bi bi-send sv-btn-icon" aria-hidden="true"></i>Me contacter</a>
             </div>
           </div>
         </div>
@@ -244,7 +443,7 @@
     <div class="sv-mobile-cta d-lg-none" aria-label="Action rapide">
       <a class="btn btn-gradient btn-lg w-100" href="./contact/index.html">
         <i class="bi bi-send sv-btn-icon" aria-hidden="true"></i>
-        Recevoir une proposition
+        Me contacter
       </a>
     </div>
 
@@ -252,9 +451,11 @@
     <footer class="footer">
       <div class="container d-flex flex-column flex-md-row justify-content-between align-items-center gap-2">
         <div class="footer-links">
-          <a href="./contact/index.html">Contact</a>
+          <a href="./index.html">Accueil</a>
           <a href="./loc-vallis/index.html">Loc Vallis</a>
           <a href="./realisations/index.html">Réalisations</a>
+          <a href="./qui-sommes-nous/index.html">Qui sommes-nous ?</a>
+          <a href="./contact/index.html">Contact</a>
         </div>
         <div class="footer-copyright">© <span id="year"></span> Silicon Vallis — Vaucluse</div>
       </div>
