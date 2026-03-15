@@ -9,11 +9,56 @@
       name="description"
       content="Silicon Vallis (Vaucluse) : création de sites web utiles pour TPE locales + Loc Vallis, solution de réservation directe pour gîtes (sans commission)." />
 
+    <link rel="canonical" href="https://silicon-vallis.fr/" />
+    <meta name="robots" content="index,follow" />
+
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <link rel="apple-touch-icon" href="/images/logo_v2.jpg" />
+
     <meta property="og:title" content="Silicon Vallis" />
     <meta
       property="og:description"
       content="Sites web utiles pour TPE locales (Vaucluse) + Loc Vallis : réservation directe pour gîtes, sans commission." />
+    <meta property="og:url" content="https://silicon-vallis.fr/" />
+    <meta property="og:site_name" content="Silicon Vallis" />
     <meta property="og:type" content="website" />
+    <meta property="og:locale" content="fr_FR" />
+    <meta property="og:image" content="https://silicon-vallis.fr/images/ventoux-banner.png" />
+    <meta property="og:image:alt" content="Silicon Vallis — Vaucluse" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Silicon Vallis" />
+    <meta
+      name="twitter:description"
+      content="Sites web utiles pour TPE locales (Vaucluse) + Loc Vallis : réservation directe pour gîtes, sans commission." />
+    <meta name="twitter:image" content="https://silicon-vallis.fr/images/ventoux-banner.png" />
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "WebSite",
+            "name": "Silicon Vallis",
+            "url": "https://silicon-vallis.fr/"
+          },
+          {
+            "@type": "ProfessionalService",
+            "name": "Silicon Vallis",
+            "url": "https://silicon-vallis.fr/",
+            "logo": "https://silicon-vallis.fr/images/logo_v2.jpg",
+            "image": "https://silicon-vallis.fr/images/ventoux-banner.png",
+            "email": "contact@silicon-vallis.fr",
+            "areaServed": [
+              { "@type": "AdministrativeArea", "name": "Vaucluse" },
+              { "@type": "City", "name": "Pernes-les-Fontaines" }
+            ],
+            "description": "Création de sites web utiles pour TPE locales en Vaucluse + Loc Vallis, réservation directe pour gîtes (sans commission)."
+          }
+        ]
+      }
+    </script>
 
     <!-- Choix structurant (V1) : site statique multi-pages en Bootstrap, sans build ni framework. -->
     <link
@@ -465,7 +510,10 @@
           <a href="./qui-sommes-nous/index.html">Qui sommes-nous ?</a>
           <a href="./contact/index.html">Contact</a>
         </div>
-        <div class="footer-copyright">© <span id="year"></span> Silicon Vallis — Vaucluse</div>
+        <div class="d-flex align-items-center gap-3">
+          <a href="./mentions-legales/index.html">Mentions légales</a>
+          <div class="footer-copyright">© <span id="year"></span> Silicon Vallis — Vaucluse</div>
+        </div>
       </div>
     </footer>
 
