@@ -1,0 +1,16 @@
+{
+  "name": "Silicon Vallis",
+  "short_name": "Silicon Vallis",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#f6e8cf",
+  "theme_color": "#23324d",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    }
+  ]
+}

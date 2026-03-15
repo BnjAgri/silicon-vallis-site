@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://silicon-vallis.fr/sitemap.xml
