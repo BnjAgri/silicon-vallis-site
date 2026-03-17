@@ -648,6 +648,69 @@ h2 {
   white-space: nowrap;
 }
 
+.sv-roi-card {
+  border: 1px solid rgba(var(--sv-ink-rgb), 0.14);
+}
+
+.sv-roi-flow {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.sv-roi-step {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 10px;
+  border-radius: 12px;
+  background: rgba(var(--sv-sand-rgb), 0.55);
+  border: 1px solid rgba(var(--sv-ink-rgb), 0.12);
+  line-height: 1.25;
+}
+
+.sv-roi-step i {
+  color: var(--sv-olive);
+  font-size: 16px;
+  line-height: 1;
+}
+
+.sv-roi-arrow {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: rgba(var(--sv-ink-rgb), 0.55);
+}
+
+.sv-roi-arrow i {
+  font-size: 14px;
+}
+
+.sv-roi-result {
+  background: rgba(var(--sv-olive-rgb), 0.09);
+  border-color: rgba(var(--sv-olive-rgb), 0.25);
+}
+
+.sv-price-stamp {
+  display: block;
+  width: 160px;
+  max-width: 100%;
+  height: auto;
+  flex: 0 0 auto;
+}
+
+.sv-roi-details summary {
+  cursor: pointer;
+  color: rgba(var(--sv-ink-rgb), 0.82);
+}
+
+.sv-roi-details summary:hover,
+.sv-roi-details summary:focus-visible {
+  color: var(--bs-link-hover-color);
+}
+
 @media (min-width: 992px) {
   .sv-featured-pack {
     transform: translateY(-10px);
