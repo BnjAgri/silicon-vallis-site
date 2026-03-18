@@ -1,11 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Poppins:wght@600;700&display=swap');
 
 /*
-  UI kit Le Wagon (adaptation statique)
-  - On reprend les noms de classes / structures du UI kit.
-  - On garde Bootstrap (CDN) comme base.
-  - On ne “copie-colle” pas la CSS du Wagon : on implémente une V1 équivalente, simple et maintenable.
-*/
+  styles.css
+  Styles globaux pour le site de Savoir Vivre.
+  - Palette de couleurs
+  - Typographie
+  - Composants récurrents (navbar, banner, cards, etc.)
+  - Utilitaires (animations, responsive, etc.)
 
 /* ===============
    Palette (Provence & pro)

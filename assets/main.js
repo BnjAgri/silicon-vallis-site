@@ -27,6 +27,34 @@
     prefill("email");
     prefill("activity");
     prefill("message");
+
+    contactForm.addEventListener("submit", (event) => {
+      event.preventDefault();
+
+      const getValue = (fieldName) => {
+        const field = contactForm.querySelector(`[name='${fieldName}']`);
+        if (!field) return "";
+        return String(field.value || "").trim();
+      };
+
+      const subject = "Silicon Vallis - Prise de contact";
+
+      const bodyLines = [
+        "Bonjour,",
+        "",
+        `Nom : ${getValue("name")}`,
+        `Email : ${getValue("email")}`,
+        `Activité : ${getValue("activity")}`,
+        "",
+        "Message :",
+        getValue("message"),
+      ];
+
+      const body = bodyLines.join("\n");
+      const mailto = `mailto:contact@silicon-vallis.fr?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+
+      window.location.href = mailto;
+    });
   }
 
   // Active l'etat "scroll" de la navbar sticky.
